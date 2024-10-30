@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with AI Mentor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Chat with Your AI Mentor</h2>
+        <div class="chat-window">
+            <div id="chat-messages"></div>
+        </div>
+        <form id="chat-form">
+            <div class="input-group">
+                <input type="text" id="message" class="form-control" placeholder="Type your message..." autocomplete="off" required>
+                <div class="input-group-append">
+                    <button class="btn btn-success">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
