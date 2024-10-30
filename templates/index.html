@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admitted Student Profile Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Admitted Student Profile</h1>
+        <p class="text-center">Please provide your application details to help shape the AI mentor's personality.</p>
+        <form method="POST">
+            <div class="form-group">
+                <label for="commonapp">Your CommonApp Essay</label>
+                <textarea class="form-control" id="commonapp" name="commonapp" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="activities">Your Activity List</label>
+                <textarea class="form-control" id="activities" name="activities" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="essays">Your Additional Essays</label>
+                <textarea class="form-control" id="essays" name="essays" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Create AI Mentor</button>
+        </form>
+    </div>
+</body>
+</html>
