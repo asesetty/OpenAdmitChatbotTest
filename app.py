@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Initialize OpenAI API key
-openai.api_key = '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'  # Replace with your OpenAI API key
+openai.api_key = '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'  # Replace with your OpenAI API key
 
 # Store admitted student's info globally or in a database in production
 admitted_student_info = {}
