@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Initialize OpenAI API key
-openai.api_key = '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'  # Replace with your OpenAI API key
+openai.api_key = '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'  # Replace with your OpenAI API key
 
 # Store admitted student's info globally or in a database in production
 admitted_student_info = {}
@@ -57,10 +57,11 @@ def get_response():
 
         ai_message = response.choices[0].message.content.strip()
     except Exception as e:
-        ai_message = "I'm sorry, but I'm currently unable to process your request."
+        ai_message = "An unexpected error occurred."
         print(f"Error: {e}")
 
     return jsonify({'message': ai_message})
+
 
 
 if __name__ == '__main__':
